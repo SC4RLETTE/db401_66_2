@@ -102,6 +102,7 @@ class _RegisterState extends State<Register> {
                             .createUserWithEmailAndPassword(
                                 email: '$_playername@tictactoe.com',
                                 password: _password);
+                        gotoChallenge();
                       } on FirebaseAuthException catch (e) {
                         if (!context.mounted) return;
                         ScaffoldMessenger.of(context).showSnackBar(SnackBar(

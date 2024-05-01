@@ -3,7 +3,6 @@ import 'pages/register.dart';
 import 'pages/challenge.dart';
 import 'package:flutter/material.dart';
 
-
 void main() {
   runApp(const MainApp());
 }
@@ -21,10 +20,9 @@ class MainApp extends StatelessWidget {
       },
       initialRoute: 'login',
       theme: ThemeData(
-        filledButtonTheme: FilledButtonThemeData(
-          style: FilledButton.styleFrom(backgroundColor: Colors.blue)
-        )
-      ),
+          appBarTheme: const AppBarTheme(backgroundColor: Colors.purple),
+          filledButtonTheme: FilledButtonThemeData(
+              style: FilledButton.styleFrom(backgroundColor: Colors.blue))),
     );
   }
 }
